@@ -3,17 +3,17 @@ session_start();
 if(isset($_SESSION['username'])){
 	include('./include/dbcon.php');
 	$username= $_SESSION['username'];
-	$q="SELECT * FROM entries WHERE username='$username'";
-	$r=mysqli_query($link,$q);
-	if(mysqli_num_rows($r)>=1){
-		$i=mysqli_num_rows($r);
+	$query="SELECT * FROM entries WHERE username='$username'";
+	$result=mysqli_query($link,$query);
+	if(mysqli_num_rows($result)>=1){
+		$count=mysqli_num_rows($result);
 		echo '{"status":true,"entries":[';
-		 while($arr=mysqli_fetch_assoc($r)){
+		 while($arr=mysqli_fetch_assoc($result)){
 		 	echo json_encode($arr);
-		 	if($i>1){
+		 	if($count>1){
 		 		echo',';
 		 	}
-		 	$i--;
+		 	$count--;
 		 }
 		 echo "]}";
 	}

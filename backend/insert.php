@@ -7,9 +7,9 @@ if(isset($_SESSION['username'])){
 		$title=$_POST['title'];
 		$username=$_SESSION['username'];
 
-		$q="INSERT INTO entries VALUES (default,'$entries','$username','$title')";
-		$r= mysqli_query($link,$q);
-		if($r){
+		$query="INSERT INTO entries VALUES (default,'$entries','$username','$title')";
+		$result= mysqli_query($link,$query);
+		if($result){
 			echo json_encode(array('status'=>true,'description'=>"Done"));
 		}else echo json_encode(array('status'=>false,'description'=>'SQL Error'));
 	}else echo json_encode(array('status'=>false,'description'=>'Missing Data'));
