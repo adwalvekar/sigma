@@ -9,7 +9,9 @@ header("Location : dashboard.php");
 <html>
 <head>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.blue_grey-red.min.css" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.blue-indigo.min.css" />
+  <meta property="og:image" content="https://iecse.xyz/favicon.ico">
+  <link rel="favicon" href="https://iecse.xyz/favicon.png" type="image/png" sizes="128x128">
 	<script defer src="https://code.getmdl.io/1.1.1/material.min.js"></script>
 	<title>Login | IECSE Sigma</title>
 
@@ -22,8 +24,7 @@ header("Location : dashboard.php");
 }
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
+  
   color: white;
 }
 </style>
