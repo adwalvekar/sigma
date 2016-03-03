@@ -81,7 +81,7 @@
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--red-grey-400 material-icons" role="presentation">flag</i>Updates</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--red-grey-400 material-icons" role="presentation">local_offer</i>Promos</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--red-grey-400 material-icons" role="presentation">shopping_cart</i>Purchases</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--red-grey-400 material-icons" role="presentation">people</i>Social</a>
+          <a class="mdl-navigation__link" href="../backend/logout.php"><i class="mdl-color-text--red-grey-400 material-icons" role="presentation">people</i>Social</a>
           <div class="mdl-layout-spacer"></div>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--red-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
         </nav>

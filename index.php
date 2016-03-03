@@ -1,7 +1,10 @@
 <?php
 session_start();
 if(isset($_SESSION['username'])){
-header("Location : dashboard.php");
+  $host  = $_SERVER['HTTP_HOST'];
+  $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+  $extra = 'dashboard.php';
+  header("Location: http://$host$uri/$extra");
 }
 ?>
 
@@ -83,7 +86,7 @@ header("Location : dashboard.php");
     <h2 class="mdl-card__title-text">Login to Sigma</h2>
   </div>-->
 <div class="absolute-center-card">
-<form action="../backend/login.php" method="POST">
+<form action="./login.php" method="POST">
   <div class="mdl-textfield mdl-js-textfield">
     <input class="mdl-textfield__input" type="text" id="sample1" name="username">
     <label class="mdl-textfield__label" for="sample1">Username</label>
