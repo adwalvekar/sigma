@@ -1,6 +1,9 @@
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
+a{
+  text-decoration: none;
+}
 .demo-avatar {
   width: 48px;
   height: 48px;
@@ -203,6 +206,30 @@ _:-ms-input-placeholder, :root .demo-graph {
   display: flex;
   box-sizing: border-box;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.demo-card-wide.mdl-card {
+  width: 600px;
+  height: 800px;
+  background: #FAFAFA;
+}
+.absolute-center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 250px;
+  background: url('./loadable/tab.png') center / cover;
+}
+.absolute-center-card {
+  margin: auto;
+  position: relative;
+  top: 0; left: 20%; bottom: 0; right: 0;
+}
+.padded-full{
+padding: 5% 5% 5% 5%;
+
 }

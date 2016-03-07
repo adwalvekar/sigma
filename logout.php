@@ -1,4 +1,5 @@
 <?php
+include_once('include/redirect.php');
 session_start();
 session_destroy();
-echo json_encode(array('status'=>true));
+pager('index.php');

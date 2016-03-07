@@ -1,4 +1,5 @@
 <?php 
+include_once 'include/redirect.php';
 if(isset($_POST['username'])&&isset($_POST['password'])){
 	include('./include/dbcon.php');
 	$username=$_POST['username'];
@@ -11,8 +12,9 @@ if(isset($_POST['username'])&&isset($_POST['password'])){
 		$permission = $arrayOutput['permission'];
 		$_SESSION['username']=$username;
 		$_SESSION['permission']=$permission;
-		echo json_encode(array('status'=>true));
-	}
+		pager('dashboard.php');
+
+		}
 	else echo json_encode(array('status' => false, 'description'=>'Wrong Username or Password'));
 	mysqli_close($link);
 }
